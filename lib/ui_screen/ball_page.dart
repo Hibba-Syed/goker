@@ -3,7 +3,6 @@ import 'package:goker/widgets/level_row.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../Extra/colors.dart';
 import '../Extra/gredients/regrediants.dart';
-import '../model/model.dart';
 import '../widgets/bingo_container.dart';
 import '../widgets/level1.dart';
 
