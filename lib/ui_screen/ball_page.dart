@@ -3,8 +3,10 @@ import 'package:goker/widgets/level_row.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../Extra/colors.dart';
 import '../Extra/gredients/regrediants.dart';
+import '../model/model.dart';
 import '../widgets/bingo_container.dart';
 import '../widgets/level1.dart';
+import 'card_page.dart';
 
 class BallPage extends StatefulWidget {
   const BallPage({Key? key}) : super(key: key);
@@ -13,6 +15,8 @@ class BallPage extends StatefulWidget {
   State<BallPage> createState() => _BallPageState();
 }
 class _BallPageState extends State<BallPage> {
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -72,17 +76,19 @@ class _BallPageState extends State<BallPage> {
                      padding: const EdgeInsets.only(left: 25,right: 20),
                      child: SizedBox(
                        height: 427,
-                       child: ListView.builder(
-                         itemCount: 75,
-                           itemBuilder: (context,index) {
-                               int i = index + 1;
-                               return Wrap(
-                                   children:const [
-                                    // Image.asset ("assets/images/${i}f.png" , height: 45),
-                                   ]
-                               );
-                                // image: ("assets/images/${i}c.png "),
-                             }
+                       child: GridView.builder(
+                          itemCount:game.length,
+                           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5),
+                           itemBuilder: (context,index)=>
+                               InkWell(
+                                 onTap: (){
+
+
+                                 Navigator.push(context, MaterialPageRoute(builder: (_)=>const CardPage()));
+                                 },
+                                 child: Image.asset( game[index].image),
+                               ),
+
                        ),
                      ),
                    ),

@@ -1,40 +1,88 @@
 import 'package:flutter/material.dart';
-class rowDesign extends StatelessWidget {
-  final String image;
-  // final String image1;
-  const rowDesign({Key? key,
-    required this.image,
-    //required this.image1,
-  }) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10,left: 13),
-      child: SizedBox(
-        height: 45, width: 45,
-        child: Wrap(
-            children: [
-              Image.asset(image),
-            ]
-        ),
-      ),
-    );
-    // return  SizedBox(
-    //   height: 95,
-    //     child: GridView.count(
-    //       crossAxisCount: 3,
-    //       children: [
-    //         Image.asset(image,height: 35,),
-    //         Image.asset(image,height: 35,),
-    //         Image.asset(image,height: 35,),
-    //       ],
-    //
-    //     ),
-    //
-    // );
-
-  }
+class Goker{
+  var image;
+  Goker({this.image});
 }
-void changValue(){
+List<Goker> game=[
+  Goker(image: 'assets/images/1f.png' ),
+  Goker(image: 'assets/images/2f.png' ),
+  Goker(image: 'assets/images/3f.png' ),
+  Goker(image: 'assets/images/4f.png' ),
+  Goker(image: 'assets/images/5f.png' ),
+  Goker(image: 'assets/images/6f.png' ),
+  Goker(image: 'assets/images/7f.png' ),
+  Goker(image: 'assets/images/8f.png' ),
+  Goker(image: 'assets/images/9f.png' ),
+  Goker(image: 'assets/images/10f.png' ),
+  Goker(image: 'assets/images/11f.png' ),
+  Goker(image: 'assets/images/12f.png' ),
+  Goker(image: 'assets/images/13f.png' ),
+  Goker(image: 'assets/images/14f.png' ),
+  Goker(image: 'assets/images/15f.png' ),
+  Goker(image: 'assets/images/16f.png' ),
+  Goker(image: 'assets/images/17f.png' ),
+  Goker(image: 'assets/images/18f.png' ),
+  Goker(image: 'assets/images/19f.png' ),
+  Goker(image: 'assets/images/20f.png' ),
+  Goker(image: 'assets/images/21f.png' ),
+  Goker(image: 'assets/images/22f.png' ),
+  Goker(image: 'assets/images/23f.png' ),
+  Goker(image: 'assets/images/24f.png' ),
+  Goker(image: 'assets/images/25f.png' ),
+  Goker(image: 'assets/images/26f.png' ),
+  Goker(image: 'assets/images/27f.png' ),
+  Goker(image: 'assets/images/28f.png' ),
+  Goker(image: 'assets/images/29f.png' ),
+  Goker(image: 'assets/images/30f.png' ),
+  Goker(image: 'assets/images/31f.png' ),
+  Goker(image: 'assets/images/32f.png' ),
+  Goker(image: 'assets/images/33f.png' ),
+  Goker(image: 'assets/images/34f.png' ),
+  Goker(image: 'assets/images/35f.png' ),
+  Goker(image: 'assets/images/36f.png' ),
+  Goker(image: 'assets/images/37f.png' ),
+  Goker(image: 'assets/images/38f.png' ),
+  Goker(image: 'assets/images/39f.png' ),
+  Goker(image: 'assets/images/40f.png' ),
+  Goker(image: 'assets/images/41f.png' ),
+  Goker(image: 'assets/images/42f.png' ),
+  Goker(image: 'assets/images/43f.png' ),
+  Goker(image: 'assets/images/44f.png' ),
+  Goker(image: 'assets/images/45f.png' ),
+  Goker(image: 'assets/images/46f.png' ),
+  Goker(image: 'assets/images/47f.png' ),
+  Goker(image: 'assets/images/48f.png' ),
+  Goker(image: 'assets/images/49f.png' ),
+  Goker(image: 'assets/images/50f.png' ),
+  Goker(image: 'assets/images/51f.png' ),
+  Goker(image: 'assets/images/52f.png' ),
+  Goker(image: 'assets/images/53f.png' ),
+  Goker(image: 'assets/images/54f.png' ),
+  Goker(image: 'assets/images/55f.png' ),
+  Goker(image: 'assets/images/56f.png' ),
+  Goker(image: 'assets/images/57f.png' ),
+  Goker(image: 'assets/images/58f.png' ),
+  Goker(image: 'assets/images/59f.png' ),
+  Goker(image: 'assets/images/60f.png' ),
+  Goker(image: 'assets/images/61f.png' ),
+  Goker(image: 'assets/images/62f.png' ),
+  Goker(image: 'assets/images/63f.png' ),
+  Goker(image: 'assets/images/64f.png' ),
+  Goker(image: 'assets/images/65f.png' ),
+  Goker(image: 'assets/images/66f.png' ),
+  Goker(image: 'assets/images/67f.png' ),
+  Goker(image: 'assets/images/68f.png' ),
+  Goker(image: 'assets/images/69f.png' ),
+  Goker(image: 'assets/images/70f.png' ),
+  Goker(image: 'assets/images/71f.png' ),
+  Goker(image: 'assets/images/72f.png' ),
+  Goker(image: 'assets/images/73f.png' ),
+  Goker(image: 'assets/images/74f.png' ),
+  Goker(image: 'assets/images/75f.png' ),
+];
+// List<Goker> game1=[
+//   Goker(image: 'assets/images/1c.png' ),
+//   Goker(image: 'assets/images/2c.png' ),
+//   Goker(image: 'assets/images/3c.png' ),
+// ];
 
-}

@@ -28,7 +28,7 @@ class GameContainer extends StatelessWidget {
         children: [
           Expanded(
             flex: 2,
-            child: Image.asset(image,height: 45,),
+            child: Image.asset(image,height: 45),
           ),
           Expanded(
             flex: 2,
